@@ -1,20 +1,26 @@
 import './style.scss';
 
 import React from 'react';
-// import UserView from '../UserView';
-// import Features from '../Features';
-// import UserMainInfo from '../UserMainInfo';
-// import UserDetails from '../UserDetails';
+import UserOverview from '../UserOverview';
+import Features from '../Features';
+import UserMainInfo from '../UserMainInfo';
+import UserDetails from '../UserDetails';
 // import UserContacts from '../UserContacts';
 
 const Content = () => {
   return (
     <div className="Content">
-      {/* <UserView />
-      <Features />
-      <UserContacts />
-      <UserMainInfo />
-      <UserDetails /> */}
+      <div className="Content__column">
+        <UserOverview />
+        <UserMainInfo />
+      </div>
+      <div className="Content__column">
+        <Features />
+        <UserDetails />
+      </div>
+      <div className="Content__column">
+
+      </div>
     </div>
   );
 };

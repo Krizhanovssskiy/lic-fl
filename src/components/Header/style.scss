@@ -22,4 +22,9 @@
       color: var(--color-primary-dark);
     }
   }
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
 }

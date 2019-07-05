@@ -1,0 +1,34 @@
+@import '../../scss/mixins.scss';
+
+.SectionMenu {
+  &__title-container {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1.4rem;
+
+  }
+
+  &__title-box {
+    border-bottom: 2px solid var(--color-grey-dark);
+    padding-bottom: 0.2rem;
+    color: var(--color-grey-dark);
+    cursor: pointer;
+  }
+
+  &__title-box--3 {
+    width: 33.3333%;
+  }
+
+  &__title-box--2 {
+    width: 50%;
+  }
+
+  &__title-box--active {
+    border-bottom: 2px solid var(--color-primary);
+    color: var(--color-primary);
+  }
+
+  &__title {
+    @include sectionTitile;
+  }
+}

@@ -1,0 +1,14 @@
+.Portfolio {
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: calc(var(--gutter) / 2);
+    justify-items: center;
+    overflow-y: scroll;
+    height: 50vh;
+    padding-right: calc(0.25 * var(--gutter));
+    margin-right: calc(-0.3 * var(--gutter));
+  }
+  
+}

@@ -1,0 +1,63 @@
+.UserView {
+  background-color: inherit;
+  position: relative;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+
+  &__image-box {
+    position: relative;
+    width: 63%;
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  &__icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    opacity: 0.7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  &__icon {
+    width: 25%;
+    height: 25%;
+    fill: var(--color-primary);
+    opacity: 0.7;
+  }
+
+  &__qr-box {
+    width: 47%;
+    padding: 3px;
+    border-radius: 50%;
+    background: linear-gradient(
+      to bottom,
+      var(--color-purple-1),
+      var(--color-purple-2)
+    );
+    position: absolute;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__qr-code {
+    width: 100%;
+    border-radius: 50%;
+  }
+}

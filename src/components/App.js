@@ -1,3 +1,4 @@
+import '../scss/base.scss';
 import './style.scss';
 
 import React from 'react';
@@ -6,15 +7,16 @@ import { Router, Route } from 'react-router-dom';
 import history from '../history';
 
 import Header from './Header';
+import Content from './Content';
 
 const App = () => {
   return (
-    <div>
+    <div className="App">
       <Router history={history}>
-        <div>
+        <div className="App__container">
           <Header />
-          {/* <Route path="/" exact component={Content} />
-          <Route path="/register" component={Register} />
+          <Route path="/" exact component={Content} />
+          {/* <Route path="/register" component={Register} />
           <Route path="/login" component={Auth} /> */}
         </div>
       </Router>
