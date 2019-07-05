@@ -1,0 +1,75 @@
+.UserNav {
+  color: var(--color-primary-dark);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+
+  & > * {
+    padding: 0 1rem;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon-box {
+    height: 3rem;
+
+    &:not(:last-child) {
+      border-right: 1px solid var(--color-primary-dark);
+    }
+  
+    &:hover > * {
+      transition: all 0.2s;
+
+      color: var(--color-white);
+      fill: var(--color-white);
+    }
+
+
+  }
+
+  &__icon-box--active {
+    color: var(--color-white);
+
+    & > svg {
+      fill: var(--color-white);
+    }
+
+    &:hover > * {
+      transition: all 0.2s;
+
+      color: var(--color-primary-dark);
+      fill: var(--color-primary-dark);
+    }
+  }
+
+  &__icon-label {
+    display: inline-block;
+    padding-right: 1rem;
+  }
+
+  &__icon {
+    height: 2.6rem;
+    width: 2.1rem;
+    fill: var(--color-primary-dark);
+  }
+
+  &__icon--selfie {
+    height: 3rem;
+    width: 3rem;
+    fill: var(--color-primary-dark);
+  }
+
+  &__login {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color-white);
+    transition: all 0.2s;
+  
+    &:hover {
+      color: var(--color-primary-dark);
+    }
+
+  }
+}

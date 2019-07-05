@@ -1,0 +1,15 @@
+.Lang {
+  margin-left: 1rem;
+  cursor: pointer;
+  &__label {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.6rem;
+    transition: all 0.2s;
+
+  }
+
+  &__label:hover {
+    color: var(--color-white);
+  }
+}
