@@ -2,7 +2,7 @@ import './style.scss';
 
 import React from 'react';
 import SectionMenu from '../SectionMenu';
-// import CardsList from '../CardsList';
+import CardsList from '../CardsList';
 
 const Features = () => {
   const titles = ['Services', 'Shop', 'Auction'];
@@ -10,7 +10,7 @@ const Features = () => {
   return (
     <section className="Features">
       <SectionMenu titles={titles} />
-      CardsList
+      <CardsList />
     </section>
   );
 };

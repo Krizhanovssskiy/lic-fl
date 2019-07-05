@@ -1,0 +1,53 @@
+.Contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: blueviolet;
+  margin-top: 1rem;
+  padding: 2rem 4rem;
+
+  &__contact-box {
+    // margin: 2rem 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: orangered;
+  }
+
+  &__image-box {
+    background-color: yellowgreen;
+    width: 20%;
+  }
+
+  &__image {
+    display: inline-block;
+    width: 100%;
+    border-radius: 50%;
+
+  }
+
+  &__text-box {
+
+  }
+
+  &__name {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__spec {
+
+  }
+
+  &__contact {
+
+  }
+
+  &__icon-box {
+  }
+
+  &__icon {
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+}

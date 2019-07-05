@@ -1,12 +1,24 @@
 .Content {
+  width: 100%;
   padding: 5rem 12rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   
 
   &__column {
-    width: 30%;
+    flex: 1;
     border-radius: 8px;
     // background-color:yellowgreen;
+    display: flex;
+    flex-direction: column;
   }
+
+  &__column:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  &__column > section:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  
 }

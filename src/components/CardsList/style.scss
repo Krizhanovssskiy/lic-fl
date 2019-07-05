@@ -1,0 +1,17 @@
+.CardsList {
+  &__photo-container {
+    
+  }
+
+  &__photo-list {
+    display: grid;
+    grid-gap: calc(var(--gutter) / 2);
+    grid-template-columns: repeat(6, calc(50% - var(--gutter) * 2));
+    grid-template-rows: minmax(150px, 1fr);
+
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    padding-bottom: calc(0.25 * var(--gutter));
+    margin-bottom: calc(-0.3 * var(--gutter));
+  }
+}
