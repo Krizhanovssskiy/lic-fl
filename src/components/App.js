@@ -8,6 +8,9 @@ import history from '../history';
 
 import Header from './Header';
 import Content from './Content';
+import Register from './Register';
+import Auth from './Auth';
+
 
 const App = () => {
   return (
@@ -16,8 +19,8 @@ const App = () => {
         <div className="App__container">
           <Header />
           <Route path="/" exact component={Content} />
-          {/* <Route path="/register" component={Register} />
-          <Route path="/login" component={Auth} /> */}
+          <Route path="/register" component={Register} />
+          <Route path="/login" component={Auth} />
         </div>
       </Router>
     </div>
